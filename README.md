@@ -1,4 +1,4 @@
-# scraping-practice
+# python-practice
 
-python練習用リポジトリ
+fizzbuzz判定するだけのpython練習用リポジトリ
 (dockerも使ってる)
