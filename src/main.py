@@ -7,7 +7,7 @@ def is_natural_number(s):
     except ValueError:
         return False
     else:
-        if int(float(s)) == 0:
+        if int(float(s)) <= 0:
             return False
         else:
             return True
@@ -15,8 +15,12 @@ def is_natural_number(s):
 
 args = sys.argv
 
+if len(args) == 1:
+    print('第一引数に入れた数字の数までFizzBuzzを判定するスクリプト')
+    sys.exit()
+
 if len(args) != 2:
-    print('引数の数が不正です')
+    print('引数が不正です')
     sys.exit()
 
 if (not is_natural_number(args[1])):
